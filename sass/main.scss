@@ -4,8 +4,15 @@
 @import './base/base';
 @import './base/utilities';
 @import './base/typography';
-@import './layout/header';
+
 @import './layout/navigation';
 
 
 @import './components/headers';
+@import './components/gallery';
+@import './components/overview';
+@import './components/button-inline';
+
+@import './pages/home';
+
+@import './base/animations';
