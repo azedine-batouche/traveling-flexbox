@@ -2,12 +2,17 @@
   "name": "traveling-flexbox",
   "version": "1.0.0",
   "description": "traveling with flexbox",
-  "main": "./js/script.js",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint ./js/script.js",
     "watch-sass": "node-sass sass/main.scss css/style.css -w",
     "live-server": "live-server",
-    "start": "npm-run-all --parallel watch-sass live-server"
+    "start": "npm-run-all --parallel watch-sass live-server",
+    "compile-sass":"node-sass sass/main.scss css/style.comp.css",
+    "concat-css": "concat -o css/style.concat.css css/style.comp.css ",
+    "prefix-css": "postcss --use autoprefixer -b '10 last versions' css/style.concat.css -o css/style.prefix.css",
+    "compress-css": "node-sass css/style.prefix.css css/style.css --output-style compressed ",
+    "build":"npm-run-all compile-sass concat-css prefix-css compress-css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +27,8 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "autoprefixer": "^9.7.5",
+    "concat": "^1.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-node": "^4.0.0",
@@ -34,6 +41,7 @@
     "husky": "^4.2.3",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
     "prettier": "2.0.3"
   },
   "husky": {
