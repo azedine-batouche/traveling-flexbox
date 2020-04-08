@@ -9,8 +9,19 @@
   transition: all 0.2s;
   cursor: pointer;
 
+  & span {
+    margin-left: 0.3rem;
+    transition: all 0.2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    & span {
+      margin-left: 0.8rem;
+    }
+  }
+  &:focus {
     outline: none;
     animation: pulsate 1s infinite;
   }
