@@ -9,6 +9,12 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(small-phone) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-Grey-light-2);
+  }
+
   &__input {
     font-size: inherit;
     font-family: inherit;
