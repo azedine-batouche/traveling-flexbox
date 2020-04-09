@@ -7,12 +7,12 @@
 
 @import './layout/navigation';
 @import './layout/details';
+@import './layout/headers';
 
-@import './components/headers';
 @import './components/gallery';
 @import './components/overview';
 @import './components/button';
 @import './components/review';
+@import './components/recommend';
 
 @import './pages/home';
-

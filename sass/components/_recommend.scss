@@ -1,0 +1,26 @@
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-Grey-dark-3);
+  display: flex;
+  align-items: center;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__customers {
+    display: flex;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+
+    &:not(:last-child) {
+      margin-right: -2rem;
+    }
+  }
+}
