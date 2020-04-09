@@ -1,0 +1,24 @@
+// MEDIA QUERIES MANAGER
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media screen and (max-width: 31.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desk {
+    @media screen and (max-width: 75em) {
+      @content;
+    }
+  }
+}

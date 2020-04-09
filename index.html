@@ -3,9 +3,289 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Traveling_</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="msapplication-config" content="./img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
+    <div class="container">
+      <header class="header">
+        <img src="./img/logo.png" alt="traveling_ logo" class="logo" />
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Où allez vous?"
+          />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">21</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="https://images.pexels.com/photos/1816013/pexels-photo-1816013.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Kelly</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="./img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Hôtel</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use
+                    xlink:href="./img/sprite.svg#icon-aircraft-take-off"
+                  ></use>
+                </svg>
+                <span>Vol</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="./img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Location voiture</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="./img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">
+            <img src="./img/device.png" alt="device" width="180px" />
+            &copy; 2020 par Traveling_ Tous droit reserver.
+          </div>
+        </nav>
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="https://r-cf.bstatic.com/images/hotel/max1280x900/436/43699633.jpg"
+                alt="photo of hotel"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="https://q-cf.bstatic.com/images/hotel/max1280x900/232/232783611.jpg"
+                alt="photo of hotel"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="https://r-cf.bstatic.com/images/hotel/max1280x900/935/93518014.jpg"
+                alt="photo of hotel"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+          <div class="overview">
+            <h1 class="overview__heading">
+              Hôtel George V
+            </h1>
+            <div class="overview__stars">
+              <svg class="overview__icon-stars">
+                <use xlink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-stars">
+                <use xlink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-stars">
+                <use xlink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-stars">
+                <use xlink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-stars">
+                <use xlink:href="./img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="./img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">
+                Paris, france
+              </button>
+            </div>
+            <div class="overview__rating">
+              <div class="overview__rating-average">9.7</div>
+              <div class="overview__rating-count">245 votes</div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="detail__description">
+              <p class="paragraph">
+                Le Four Seasons Hotel George V Paris est installé à quelques pas
+                des Champs-Élysées, sur l'avenue Georges V. Doté de terrasses
+                privées offrant une vue imprenable sur la ville parisienne,
+                l'établissement propose de somptueuses compositions florales de
+                marque créées par Jeff Leatham, des soins spa haut de gamme et
+                une cuisine étoilée au guide Michelin.
+              </p>
+              <p class="paragraph">
+                Situé à seulement 1,6 km de la tour Eiffel et à 3,5 km du musée
+                d'Orsay, le Four Seasons Hotel George V Paris bénéficie d'un
+                emplacement idéal dans le Triangle d'Or, réputé pour ses
+                boutiques de haute couture. Les magasins et cafés branchés de
+                Saint-Germain-des-Prés se trouvent également à 3,5 km. Le
+                parking de l'hôtel est accessible moyennant des frais
+                supplémentaires
+              </p>
+              <ul class="list">
+                <li class="list__item">Petit déjeuner inclus</li>
+                <li class="list__item">navette aérorport</li>
+                <li class="list__item">Spa et centre de bien-être</li>
+                <li class="list__item">Restaurant</li>
+                <li class="list__item">bar</li>
+                <li class="list__item">chambres non-fumeurs</li>
+                <li class="list__item">cash change</li>
+                <li class="list__item">animaux acceptés</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Kevin et 3 autres amis recommandent cette hôtel
+                </p>
+                <div class="recommend__customers">
+                  <img
+                    src="https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="customer photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="https://images.pexels.com/photos/157661/young-woman-shooting-model-157661.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="customer photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="https://images.pexels.com/photos/412840/pexels-photo-412840.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="customer photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="https://images.pexels.com/photos/1037914/pexels-photo-1037914.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="customer photo"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="detail__user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Un accueil et un service excellent à la hauteur d'un grand
+                  palace parisien comme on les aiment, à deux pas des champs
+                  élysée, très pratique pour le shopping, la présence de fleurs
+                  partout donne un bien-être fous
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="user 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">john Smith</p>
+                    <p class="review__user-date">04 Mars 2020</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <blockquote class="review__text">
+                  « Qu’avez vous aimé dans cet établissement ? » Tout ! Car tout
+                  était parfait, l’emplacement de la chambre (8ème et dernier
+                  étage avec la vue sur la Tour Eiffel) le confort …
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="https://images.pexels.com/photos/4064921/pexels-photo-4064921.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="user 2"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Anne Ford</p>
+                    <p class="review__user-date">04 Avril 2020</p>
+                  </div>
+                  <div class="review__rating">8.5</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">
+                Plus d'avis <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+          <div class="news">
+            <h2>
+              Bonne nouvelle! Vous avez 4 chambres de libre
+            </h2>
+            <button class="btn">
+              <spn class="btn__visible">Reserver maintenant</spn>
+              <spn class="btn__invisible"> 4 chambres disponibles</spn>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,55 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-Grey-light-2);
+  box-shadow: var(--boxshadow-dark);
+
+  @include respond(big-desk) {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-Grey-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include respond(small-phone) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 12rem;
+  }
+}
+
+.content {
+  display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  background-color: var(--color-Grey-dark-1);
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  background-color: #fff;
+  flex: 1;
+}
+.news {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+}
