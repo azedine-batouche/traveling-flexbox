@@ -14,7 +14,7 @@ This project using html, saas, node (BEM, 7-1, etc.. ) to get a website design w
 
 # Demo
 
-To get the demo click of the website click here : [Traveling\_](https://batouche-dev.github.io/traveling-flexbox/) .
+To get the demo click of the website click here : [Traveling\_](https://azedine-batouche.github.io/traveling-flexbox/) .
 
 # Setup
 
